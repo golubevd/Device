@@ -1,1 +1,254 @@
-# style
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 1200px;
+    padding: 0;
+    padding-top: 40px;
+    margin: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .01em;
+    color: #000;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+    min-height: 100px;
+    position: relative;
+}
+
+.main_header{
+    padding: 43px 60px;
+    position: relative;
+    max-width: 1160px;
+    min-height: 300px;
+    background-color: #f7e296;    
+}
+
+.main_header-logo{
+    position: absolute;
+    top: -25px;
+    left: 60px;   
+}
+
+.main_header-logo a{
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-nav__user-list{
+    -webkit-display:flex;
+    -ms-display:flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 21px;
+    list-style: none;
+}
+
+.main-nav__user-search{
+    width: 540px;
+}
+
+.main-nav__search{
+    -webkit-display:flex;
+    -ms-display:flex;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 440px;    
+}
+
+.main-nav__search-label{
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/search.svg") no-repeat;
+    cursor: pointer;
+}
+
+
+.main-nav__search-input{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 0;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #000;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.main-nav__search-btn{
+    position: absolute;
+    top: -9px;
+    left: 340px;
+    width: 81px;
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    border: 2px solid #000;
+    background-color: transparent;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.main-nav__search-btn::before{
+    position: absolute;
+    content: ""; 
+    bottom: -2px;
+    left: -340px;
+    display: none;
+    height: 2px;
+    width: 340px;    
+    background: #000;     
+}
+
+
+.main-nav__search-input::placeholder{
+     color: rgba(0,0,0,.3);
+}
+
+.main-nav__search-input:hover::placeholder{
+     color: rgba(0,0,0,.5);
+}
+
+.main-nav__search-input:focus::placeholder{
+    font-size: 0;
+}
+
+.main-nav__search-input:focus~.main-nav__search-btn::before{
+    display: block;
+}
+
+.main-nav__search-btn:focus~.main-nav__search-btn::before{
+    display: block;
+}
+
+
+ .main-nav__search-input:focus~.main-nav__search-btn{
+     z-index: 0;
+   opacity: 1;    
+} 
+
+.main-nav__search-btn:hover{
+    color: #fff;
+    background: #000;
+    transition: all .1s linear;
+}
+
+.main-nav__search-btn:focus{
+    z-index: 0;
+    color: #fff;
+    background: #000;
+   opacity: 1;
+    transition: all .1s linear;
+}
+
+.main-nav__search-btn:active{
+    color:rgba(255,255,255,.3);
+}
+
+.main-nav__user-login{
+    width: 280px;
+}
+
+.main-nav__user-link{
+    position: relative;    
+    color: #000;
+}
+
+.main-nav__user-link--login{
+    padding-left: 26px;
+}
+
+.main-nav__user-link--login::before{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 12px;
+    bottom: 4px;
+    left: 0px;
+    background: url('../img/user.svg') no-repeat;    
+}
+
+.main-nav__user-compare, .main-nav__user-cart{
+    width: 110px;
+    }
+
+.main-nav__user-link--compare{
+    padding-left: 26px;
+}
+
+.main-nav__user-link--compare::before{
+position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    bottom: 4px;
+    left: 7px;
+    background: url('../img/compare.svg') no-repeat;    
+}
+
+.main-nav__user-cart{
+    text-align: right;
+}
+
+.main-nav__user-link--cart{
+    padding-left: 26px;
+}
+
+.main-nav__user-link--cart::before{
+position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    bottom: 4px;
+    left: 8px;
+    background: url('../img/cart.svg') no-repeat;    
+}
+
+.visual-hidden:not(:focus):not(:active),
+input[type="checkbox"].visual-hidden,
+input[type="radio"].visual-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path:inset(100%);
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;    
+}

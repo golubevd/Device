@@ -1,5 +1,5 @@
 @font-face {
-			font-family: "Gilroy Extra Bold";
+			font-family: "Gilroy ExtraBold";
 			src: url("../fonts/gilroyextrabold.woff") format("woff"),
 			url("../fonts/gilroyextrabold.woff2") format("woff2");
 			font-style: normal;
@@ -23,7 +23,7 @@
 	}
 
 @font-face {
-			font-family: "Open Sans Light";
+			font-family: "Open SansLight";
 			src: url("../fonts/opensanslight.woff") format("woff"),
 			url("../fonts/opensanslight.woff2") format("woff2");
 			font-style: normal;

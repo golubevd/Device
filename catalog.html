@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">    
 </head>
-<body>
+<body class="catalog">
   <div class="wrapper">
      <header class="main_header">
       <h1 class="visual-hidden">Интернет магазин полезных устройств Device</h1>
@@ -26,7 +26,8 @@
                   </form>
               </li>
               <li class="main-nav__user-item main-nav__user-login">
-                    <a href="#" class="main-nav__user-link main-nav__user-link--login">Войти</a>
+                    <a href="#" class="main-nav__user-link main-nav__user-link--login">Валентин Петухов</a>                 
+                    <a href="#" class="main-nav__user-link main-nav__user-link--logout">Выйти</a>
               </li>
               <li class="main-nav__user-item main-nav__user-compare">
                   <a href="#" class="main-nav__user-link main-nav__user-link--compare">Сравнить</a>
@@ -71,29 +72,26 @@
   <main>
       <section class="our-products">
           <h2 class="visual-hidden">Мы предлогаем</h2>
-          <div class="wrapper">
-              <div class="container">
+          <div class="wrapper">             
                   <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
                   <nav class="breadcrumbs">
                   <ul class="breadcrumbs-list">
                       <li class="breadcrumbs-item">
-                      <a href="index.html">Главная</a>
+                      <a href="index.html" class="breadcrumbs-link">Главная</a>
                       </li>
                       <li class="breadcrumbs-item">
-                      <a href="catalog.html">Каталог товаров</a>
+                      <a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
                       </li>
                       <li class="breadcrumbs-item">
-                      <a href="№">Моноподы для селфи</a>
+                      <a class="breadcrumbs-link">Моноподы для селфи</a>
                       </li>
                   </ul>
                   </nav>
-              </div>
-          </div>
+              </div>          
       </section>
-      <section class="page-catalog">
-          <h2 class="visual-hidden">Выбирите товар по</h2>
-          <div class="wrapper">
-              <section class="filters-wrapper">
+      <section class="page-catalog_wrapper">
+          <h2 class="visual-hidden">Выбирите товар по</h2>         
+              <section class="filters-wrapper">                
                  <div class="filters-wrapper_title">
                      <h2>Фильтр:</h2>
                  </div>
@@ -115,7 +113,7 @@
                                      <input type="text" class="filter-range_input" name="min-price" value="0">
                                      </label>
                                       <label class="filter-range_label filter-range_label--max">
-                                     от
+                                     до
                                      <input type="text" class="filter-range_input" name="max-price" value="5000">
                                      </label>                                     
                                  </div>                             
@@ -270,8 +268,7 @@
                         <a href="#" class="goods-pagination_control goods-pagination_controls--forward">Вперед</a>  
                       </li>
                   </ul>
-              </section>              
-          </div>
+              </section>          
       </section>
   </main>
   <footer class="page-footer">
@@ -300,11 +297,11 @@
                   <span>г. Москва, ул. Строителей, 15</span>
               </div>
               <div class="page-footer_services">
-                  <a href="#" class="page-footer_services-link page-footer_services-link--delivery">Контакты</a>
+                  <a href="#" class="page-footer_services-link page-footer_services-link--delivery">Доставка</a>
                   <a href="#" class="page-footer_services-link page-footer_services-link--warranty">Гарантия</a>
-                  <a href="#" class="page-footer_services-link page-footer_services-link--credit">Кредит</a>
+                  <a href="#" class="page-footer_services-link page-footer_services-link--credit">Контакты</a>
               </div>
-              <div class="page-foote_phone">
+              <div class="page-footer_phone">
                   <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
               </div>              
           </div>
@@ -316,7 +313,7 @@
                       </a>
                   </li>
                   <li class="page-footer_social-item">
-                     <a href="#" class="page_footer_social-link page-footer_social-link--inst">
+                     <a href="#" class="page-footer_social-link page-footer_social-link--inst">
                       <span class="visual-hidden">Instagram</span>
                       </a>
                   </li>
@@ -327,7 +324,7 @@
                   </li>
               </ul>
               <div class="page-footer_copyright">
-                  <a href="https://htmlacademy.ru/intensive/htmlcss">
+                  <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">
                       <img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35">
                   </a>
               </div>

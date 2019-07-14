@@ -1,4 +1,4 @@
-'use strickt';
+'use strict';
 
 let writeLink = document.querySelector('.write-btn');
 let mapLink = document.querySelector('.main-contacts_map');
